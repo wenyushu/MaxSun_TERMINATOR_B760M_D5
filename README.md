@@ -1,6 +1,6 @@
 # 系统信息
 
-![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/MacPro.png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/Mac%20Pro.png)
 
 
 # 配置信息
@@ -72,7 +72,7 @@
 
 but...显示器息屏状态下主机还是处于运行状态，属于无解状态
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/电源.png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/电源.png)
 
 ## `3.` 图形卡/显示器（没钱买 4K...）
 
@@ -87,13 +87,13 @@ but...显示器息屏状态下主机还是处于运行状态，属于无解状�
 + 目前只有 M1 之后的机型才能正常使用 DSC
   + 都买 M1 了...还黑个锤子...
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/图形卡.png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/图形卡.png)
 
 ## `4.` 板载网卡 and 板载声卡
 
 ### 板载网卡：这块板子用的 8125 网卡，驱动正常
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/板载网卡.png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/板载网卡.png)
 
 ### 板载声卡：ALC 897，驱动正常，ID 为12
 
@@ -111,7 +111,7 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和�
   + D4 and D5：均可
   + 容量：至少 `单根 4G`，否则无法开机
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/内存.png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/内存.png)
 
 ***
 
@@ -127,9 +127,9 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和�
 
 不知道咋样叫正常，但我的无线鼠标在 `定制USB` 后能用，看图
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/USB.png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/USB.png)
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/蓝牙 USB .png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/%E8%93%9D%E7%89%99%20USB%20.png)
 
 ***
 
@@ -139,7 +139,7 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和�
 
 # 附录 Ⅰ · 如果遇到如图所示的错误
 
-![52477](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/52477.jpg)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/52477.jpg)
 
 ### 解决办法如下：
 
@@ -147,10 +147,10 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和�
 
 + 进入 `BIOS` -> `Advanced` -> `Nvme Configuration`
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/nvem_configuration.jpg)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/nvem_configuration.jpg)
 
 + 仅保留所需要安装的硬盘，例如本文档将 macOS 安装到 SN570 SSD 中
   + 则需要将其它 SSD 设置成禁用状态
   + macOS 安装完成，并设置好引导后，可解除禁用
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/nvme.jpg)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/nvme.jpg)
