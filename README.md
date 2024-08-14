@@ -2,7 +2,7 @@
 # Maxsun_TERMINATOR_B760M_D5
 # 系统信息
 
-![]([铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/tree/main/image)/MacPro.png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/MacPro.png)
 
 
 # 配置信息
