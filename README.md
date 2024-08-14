@@ -1,5 +1,3 @@
-[铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.md](https://github.com/user-attachments/files/16614404/B760M.D5.opencore.EFI.md)
-# Maxsun_TERMINATOR_B760M_D5
 # 系统信息
 
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/MacPro.png)
@@ -66,7 +64,7 @@
 + 购买的 `BCM943602CS 转接 PCIE`，在 macOS 13（即 `Ventura` 版本）中正常使用，支持 `隔空投送` 等功能。
   + but...这卡跑不满是正常的
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/all.png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/all.png)
 
 ## `2.` 睡眠
 
