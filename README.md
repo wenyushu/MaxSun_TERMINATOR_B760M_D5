@@ -85,7 +85,7 @@
 + HDMI 线只能跑到 144Hz，更高刷新率则需要更换成 DP 线
 + 在安装 macOS 时，为了不必要的 bug，请使用 DP 线
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/显示器.png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/显示器.png)
 
 + 在 4K 高刷显示器下，使用 DP 接口需要关闭显示器的 DSC 功能，否则 DP 口可能会不正常（黑屏、刷新率最高 100Hz 等问题），注意这是 MacOS 系统本身的问题。
   + 关闭后 DP 口可以正常使用 4K/120Hz/10Bit 输出（无法 HDR）或是 4K95Hz10Bit（可以使用 HDR）
@@ -107,7 +107,7 @@
 
 SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和运行 macOS，建议购买。
 
-![](铭瑄 B760M 终结者 D5 opencore 配置分享 EFI.assets/存储.png)
+![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/存储.png)
 
 ## `6.` Memory
 
