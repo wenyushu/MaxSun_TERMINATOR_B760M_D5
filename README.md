@@ -7,7 +7,7 @@
 
 |              | 硬件配置                        | 备注                                                         |
 | ------------ | ------------------------------- | ------------------------------------------------------------ |
-| **CPU**      | i5-12600KF                      | 11代及以上 `CPU` 核显无法驱动，若读者使用 `12600K` 且在 Windows 下需要使用核显，则需要在启动参数中添加 `-wegnoigpu`参数屏蔽核显 |
+| **CPU**      | i5-12600KF                      | 11代及以上 `CPU` 核显无法驱动，若读者使用 `12600K` 且在 Windows 下需要使用核显，则需要在 `启动参数` 中添加 `-wegnoigpu` 参数用于在 macOS 下屏蔽核显 |
 | **主板**     | MS-Terminator B760M D5          | `MS-Terminator B760M D5 WIFI` 版本仅自带一张 `无线网卡`，与 `MS-Terminator B760M D5` 无本质区别。<br>理论上为 `D5` 是 `MS-Terminator B760M D4` 与 ``MS-Terminator B760M D4 WIFI` 的换皮版本，应当可以使用此配置。<br>由于铭瑄祖传供电与设计方案（一套方案传三代），若有采用与 `D5` 类似的设计方案（如 `板载网卡8125`、`板载声卡 ALC897`）的主板，例如 `MS-iCraft B760M CROSS(未测试)` 应当也可以使用此配置。<br>**注意：此主板自带网卡接口协议为 `CNVi`，此协议在 macOS 中无法驱动！** |
 | **SSD**      | SN570 512G                      | 西部数据： `SN550/570/750/770/850/850X` 均能正常安装和运行 macOS，建议购买。 |
 | **Memory**   | JUHOR 星域DDR5 6000 16G  * 2    | 没什么特殊要求，除了远古时期的 `AMD 专用内存条` 可能存在问题之外，目前大部分品牌均可。<br>颗粒：避免垃圾颗粒；频率：均可；D4 or D5：均可；容量：至少 `单根 4G`，否则无法开机。 |
@@ -26,7 +26,7 @@
 + 三码：
   + 读者请使用 [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) 或者 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) 生成并修改 `SMBIOS` 中的序列号，以及注入三码
   + 注意：请务必注入三码后再登录 `Apple ID`，否则会被苹果立即拉黑！
-  + 注意：在黑果上登录 'Apple ID' 有拉黑风险，本文档不为此负责！
+  + 注意：在黑果上登录 `Apple ID` 有拉黑风险，本文档不为此负责！
   
 + 由于 `Sonoma 14.0` 已正式移除了 `IO80211LegacyFamily 驱动`，而为了追求完美体验，本文档仅用于 `macOS 13`，即 `Ventura` 版本。
 + OpenCore 版本：截至本文档编辑时间为 `1.0.1`。
