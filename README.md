@@ -144,13 +144,13 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和�
 ***
 # 鸣谢名单（以下不分先后）：
 
-+ 感谢带佬 (JeoJay127)[https://github.com/JeoJay127] 无偿分享的工具，本教程的 EFI 基于 (RapidEFI)[https://github.com/JeoJay127/RapidEFI-Tool] 工具制作！
-+ 感谢 (OpenCore 团队)[https://github.com/acidanthera/OpenCorePkg] 制作的内核工具！
-+ 感谢 (黑苹果星球)[https://heipg.cn/opencore] 提供的参考文档！
-+ 感谢 (TerserTop)[https://www.bilibili.com/video/BV1eP4y1s76d/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f] 提供的演示教程！
-+ 感谢 (win10Q)[https://www.bilibili.com/video/BV1ub421J7Lk/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f] 提供的 `USB 定制` 教程！
-+ 感谢 (图拉丁GJ)[https://www.bilibili.com/video/BV16p4y1M7G3/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f] 提供的 `强刷 VBios` 教程！
-+ 感谢 (大头蔡Cass)[https://www.bilibili.com/video/BV17e4y1A7os/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f] 提供的注意事项！
++ 感谢带佬 [JeoJay127](https://github.com/JeoJay127) 无偿分享的工具，本教程的 EFI 基于 [RapidEFI](https://github.com/JeoJay127/RapidEFI-Tool) 工具制作！
++ 感谢 [OpenCore 团队](https://github.com/acidanthera/OpenCorePkg) 制作的内核工具！
++ 感谢 [黑苹果星球](https://heipg.cn/opencore) 提供的参考文档！
++ 感谢 [TerserTop](https://www.bilibili.com/video/BV1eP4y1s76d/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f) 提供的演示教程！
++ 感谢 [win10Q](https://www.bilibili.com/video/BV1ub421J7Lk/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f]) 提供的 `USB 定制` 教程！
++ 感谢 [图拉丁GJ](https://www.bilibili.com/video/BV16p4y1M7G3/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f) 提供的 `强刷 VBios` 教程！
++ 感谢 [大头蔡Cass](https://www.bilibili.com/video/BV17e4y1A7os/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f) 提供的注意事项！
 ***
 
 ***
