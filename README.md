@@ -7,10 +7,10 @@
 
 |              | 硬件配置                        | 备注                                                         |
 | ------------ | ------------------------------- | ------------------------------------------------------------ |
-| **CPU**      | i5-12600KF                      | 11代及以上 `CPU` 核显无法驱动，若读者使用 `12600K` 且在 Windows 下需要使用核显，则需要在 `启动参数` 中添加 `-wegnoigpu` 参数用于在 macOS 下屏蔽核显 |
-| **主板**     | MS-Terminator B760M D5          | `MS-Terminator B760M D5 WIFI` 版本仅自带一张 `无线网卡`，与 `MS-Terminator B760M D5` 无本质区别。<br>理论上为 `D5` 是 `MS-Terminator B760M D4` 与 ``MS-Terminator B760M D4 WIFI` 的换皮版本，应当可以使用此配置。<br>由于铭瑄祖传供电与设计方案（一套方案传三代），若有采用与 `D5` 类似的设计方案（如 `板载网卡8125`、`板载声卡 ALC897`）的主板，例如 `MS-iCraft B760M CROSS(未测试)` 应当也可以使用此配置。<br>**注意：此主板自带网卡接口协议为 `CNVi`，此协议在 macOS 中无法驱动！** |
-| **SSD**      | SN570 512G                      | 西部数据： `SN550/570/750/770/850/850X` 均能正常安装和运行 macOS，建议购买。 |
-| **Memory**   | JUHOR 星域DDR5 6000 16G  * 2    | 没什么特殊要求，除了远古时期的 `AMD 专用内存条` 可能存在问题之外，目前大部分品牌均可。<br>颗粒：避免垃圾颗粒；频率：均可；D4 or D5：均可；容量：至少 `单根 4G`，否则无法开机。 |
+| **CPU**      | i5-12600KF                      | Intel 11代及以上 `CPU` 核显无法驱动，若读者使用 `12600K` 且在 Windows 下需要使用核显，则需要在 `启动参数` 中添加 `-wegnoigpu` 参数用于在 macOS 下屏蔽核显 |
+| **主板**     | MS-Terminator B760M D5          | `MS-Terminator B760M D5 WIFI` 版本仅自带一张 `AX101 无线网卡`，与 `MS-Terminator B760M D5` 无本质区别。<br>理论上为 `D5` 是 `MS-Terminator B760M D4` 与 ``MS-Terminator B760M D4 WIFI` 的换皮版本，应当可以使用此配置。<br>由于铭瑄祖传供电与设计方案（一套方案传三代），若有采用与 `D5` 类似的设计方案（如 `板载网卡8125`、`板载声卡 ALC897`）的主板，例如 `MS-iCraft B760M CROSS(未测试)` 应当也可以使用此配置。<br>**注意：此主板自带网卡接口协议为 `CNVi`，此协议在 macOS 中无法驱动！** |
+| **SSD**      | SN570 512G                      | 西部数据： `SN550/570/750/770/850/850X` 对于 `TRIM` 有着完美支持，因此均能正常安装和运行 macOS，建议购买。 |
+| **Memory**   | JUHOR 星域 DDR5 6000 16G  * 2    | 没什么特殊要求，除了远古时期的 `AMD 专用内存条` 可能存在问题之外，目前大部分品牌均可。<br>颗粒：避免垃圾颗粒；频率：均可；D4 or D5：均可；容量：至少 `单根 4G`，否则无法开机。 |
 | **显卡**     | 蓝宝石 RX570 8G（免驱卡）       | 或者使用其它免驱卡均可                                       |
 | **电源**     | Segotep GM650W 冰川版金牌全模组 | 无特殊要求。<br>注意：A卡 `瞬时功耗` 较高，因此 6 毛 1 瓦 以上的电源均可。 |
 | **散热**     | Segotep G6                      | 无特殊要求。                                                 |
@@ -35,9 +35,9 @@
   + 在安装 macOS 时，为了不必要的 bug，请使用 DP 线！
 + 硬盘：
   + 建议单盘安装 macOS。
-  + WD 品牌下的全系列 `SN550/570/580/730/750/770/850/850X` 对 macOS 完美支持，不会出现 `宕机`, `冻屏` 的现象。
+  + WD 品牌下的全系列 `SN550/570/580/730/750/770/850/850X` 对于 `TRIM` 有着完美支持，因此均能正常安装和运行 macOS，不会出现 `宕机`, `冻屏` 的现象。
 + 网卡：
-  + 铭瑄大部分主板（包括此主板）网卡接口仅支持 `CNVi` 技术（在 macOS 中无法驱动），建议在安装 macOS 时暂时禁用，等到安装完成后可以解除。
+  + 铭瑄大部分主板（包括此主板）网卡接口仅支持 `CNVi` 协议（而此协议在 macOS 中无法驱动），建议在安装 macOS 时暂时禁用，等到安装完成后可以解除。
   + 建议购买一张博通免驱卡，例如 `BCM943602CS` + `转接 PCIE 卡`，在某宝中售价仅为 90 元左右！
 ***
 
@@ -87,9 +87,10 @@
 
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/显示器.png)
 
-+ 在 4K 高刷显示器下，使用 DP 接口需要关闭显示器的 DSC 功能，否则 DP 口可能会不正常（黑屏、刷新率最高 100Hz 等问题），注意这是 MacOS 系统本身的问题。
-  + 关闭后 DP 口可以正常使用 4K/120Hz/10Bit 输出（无法 HDR）或是 4K95Hz10Bit（可以使用 HDR）
-  + HDMI 接口同样最高 120Hz
+###  `4K 高刷显示器`
+使用 DP 接口时，需要关闭显示器的 DSC 功能，否则 DP 口可能会不正常（黑屏、刷新率最高 100Hz 等问题），注意：这是 MacOS 系统本身的问题。
++ 因此，理论上在关闭后 DP 接口后，可以正常使用 4K/120Hz/10Bit 输出（无法 HDR），或者使用 4K/95Hz/10Bit（可以使用 HDR）
+  + HDMI 接口同样最高支持到 120Hz
 + 目前只有 M1 之后的机型才能正常使用 DSC
   + 都买 M1 了...还黑个锤子...
 
@@ -101,11 +102,11 @@
 
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/板载网卡.png)
 
-### 板载声卡：ALC 897，驱动正常，ID 为12
+### 板载声卡：ALC 897，驱动正常，ID 值为12
 
 ## `5.` 存储
 
-SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和运行 macOS，建议购买。
+SN570 512G  西部数据： `SN550/570/750/770/850/850X` 全系列均能正常安装和运行 macOS，建议购买。
 
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/存储.png)
 
@@ -125,13 +126,13 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和�
 
 包括：
 
-+ 主板后置面板：2 个 USB 3.2，6个 USB 2.0，Type-C 接口
++ 主板后置面板：2 个 `USB 3.2`，6个 `USB 2.0`，内置 `Type-C` 接口
   + 板载网卡，板载声卡
-  + 注意：自带无线网卡接口协议为 `CNVi`，无法驱动！建议在安装 macOS 时，在 BIOS 中暂时禁用此接口！在安装完成后可解除！
-+ 机箱自带前置面板： 1个 USB 3.0，2 个 USB 2.0 接口
+  + 注意：自带无线网卡接口协议为 `CNVi`，此协议在 macOS 中无法驱动！建议在安装 macOS 时，在 BIOS 中暂时禁用此接口！在安装完成后可解除！
++ 机箱（ ` 白泽 360 ` ）自带前置面板： 1个 `USB 3.0`，2 个 `USB 2.0` 接口
 + 无线网卡蓝牙等，速率均正常。
 
-不知道咋样叫正常，但我的无线鼠标在 `定制USB` 后能用，看图
+不知道咋样叫正常，但我的无线鼠标在 `定制 USB` 后能用，看图
 
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/USB.png)
 
@@ -142,7 +143,7 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和�
 ***
 
 ***
-# 鸣谢名单（以下不分先后）：
+# 鸣谢名单（以下排名不分先后）：
 
 + 感谢带佬 [JeoJay127](https://github.com/JeoJay127) 无偿分享的工具，本教程的 EFI 基于 [RapidEFI](https://github.com/JeoJay127/RapidEFI-Tool) 工具制作！
 + 感谢 [OpenCore 团队](https://github.com/acidanthera/OpenCorePkg) 制作的内核工具！
@@ -151,6 +152,7 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和�
 + 感谢 [win10Q](https://www.bilibili.com/video/BV1ub421J7Lk/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f]) 提供的 `USB 定制` 教程！
 + 感谢 [图拉丁GJ](https://www.bilibili.com/video/BV16p4y1M7G3/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f) 提供的 `强刷 VBios` 教程！
 + 感谢 [大头蔡Cass](https://www.bilibili.com/video/BV17e4y1A7os/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f) 提供的注意事项！
++ 感谢 [国光酱](https://apple.sqlsec.com/) 提供的 `国光的黑苹果安装教程：手把手教你配置 OpenCore` 的实战系列教程！
 ***
 
 ***
@@ -161,16 +163,64 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 均能正常安装和�
 
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/52477.jpg)
 
-### 解决办法如下：
+## 原因（ 详情请参考 `无解硬盘` ）：
 
-本文档的计算机中装有三块 `NVMe` 的 `SSD`，并且打算将 macOS 安装到第三块西数 SN570 的硬盘中
+黑果这块经常在 NVME 硬盘这里翻车，比如常见的：三星 `Samsung PM961/PM981/PM981a/PM991` 系列、镁光 `Micron 2200V MTFDHBA512TCK`、`Micron 2200S` 系列等！
+
+而本文档的计算机中装有三块 `NVMe` 的 `SSD`，并且打算将 macOS 安装到第三块西数 `SN570` 的硬盘中，如下所示：
+
++ 第一块为：`GLOWAY YCT512NVMe-M.2`
++ 第二块为：`Micron MTFDHBA1T0TCK`，这块硬盘对于 macOS 无解，因此会出现如上报错！
++ 第三块为：`WD Blue SN570 500GB`
+
+## 解决办法如下（ 临时，仅用于安装 macOS ）：
 
 + 进入 `BIOS` -> `Advanced` -> `Nvme Configuration`
 
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/nvem_configuration.jpg)
 
-+ 仅保留所需要安装的硬盘，例如本文档将 macOS 安装到 SN570 SSD 中
-  + 则需要将其它 SSD 设置成禁用状态
-  + macOS 安装完成，并设置好引导后，可解除禁用
++ 仅保留所需要安装的硬盘，例如本文档将 macOS 安装到 `SN570` SSD 中
+  + 则需要将其它 SSD 设置成禁用状态！
+  + macOS 安装完成，并设置好引导后，再做调整！
 
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/nvme.jpg)
+
+## 解决办法 - PXPX 方法（ 永久 ）
+为了避免重复造轮子，可以参考 [国光酱 - 屏蔽不支持的硬盘 ](https://apple.sqlsec.com/6-%E5%AE%9E%E7%94%A8%E5%A7%BF%E5%8A%BF/6-8.html)，原文如下：
+
+需要先在 Windows 下查看到具体的硬盘路径，不同的电脑都不太一样，实际路径以你的实际为准：
+
+然后将下面的内容 `_SB_.PCI0.RP21` 替换成你自己看到实际路径就行了，接着将文件保存为 `SSDT-RP.PXSX-disbale.aml`，OC 加载这个 `SSDT` 即可：
+
+```
+DefinitionBlock ("", "SSDT", 2, "OCLT", "noRPxx", 0x00000000)
+{
+    External (_SB_.PCI0.RP21, DeviceObj)
+
+    Scope (_SB.PCI0.RP21)
+    {
+        OperationRegion (DE01, PCI_Config, 0x50, One)
+        Field (DE01, AnyAcc, NoLock, Preserve)
+        {
+                ,   4, 
+            DDDD,   1
+        }
+
+        Method (_STA, 0, Serialized)  // _STA: Status
+        {
+            If (_OSI ("Darwin"))
+            {
+                Return (Zero)
+            }
+        }
+    }
+
+    Scope (\)
+    {
+        If (_OSI ("Darwin"))
+        {
+            \_SB.PCI0.RP21.DDDD = One
+        }
+    }
+}
+```
