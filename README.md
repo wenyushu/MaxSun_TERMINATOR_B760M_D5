@@ -186,41 +186,4 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 全系列均能正常�
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/nvme.jpg)
 
 ## 解决办法 - PXPX 方法（ 永久 ）
-为了避免重复造轮子，可以参考 [国光酱 - 屏蔽不支持的硬盘 ](https://apple.sqlsec.com/6-%E5%AE%9E%E7%94%A8%E5%A7%BF%E5%8A%BF/6-8.html)，原文如下：
-
-需要先在 Windows 下查看到具体的硬盘路径，不同的电脑都不太一样，实际路径以你的实际为准：
-
-然后将下面的内容 `_SB_.PCI0.RP21` 替换成你自己看到实际路径就行了，接着将文件保存为 `SSDT-RP.PXSX-disbale.aml`，OC 加载这个 `SSDT` 即可：
-
-```
-DefinitionBlock ("", "SSDT", 2, "OCLT", "noRPxx", 0x00000000)
-{
-    External (_SB_.PCI0.RP21, DeviceObj)
-
-    Scope (_SB.PCI0.RP21)
-    {
-        OperationRegion (DE01, PCI_Config, 0x50, One)
-        Field (DE01, AnyAcc, NoLock, Preserve)
-        {
-                ,   4, 
-            DDDD,   1
-        }
-
-        Method (_STA, 0, Serialized)  // _STA: Status
-        {
-            If (_OSI ("Darwin"))
-            {
-                Return (Zero)
-            }
-        }
-    }
-
-    Scope (\)
-    {
-        If (_OSI ("Darwin"))
-        {
-            \_SB.PCI0.RP21.DDDD = One
-        }
-    }
-}
-```
+为了避免重复造轮子，详情请参考 [国光酱 - 屏蔽不支持的硬盘 ](https://apple.sqlsec.com/6-%E5%AE%9E%E7%94%A8%E5%A7%BF%E5%8A%BF/6-8.html)
