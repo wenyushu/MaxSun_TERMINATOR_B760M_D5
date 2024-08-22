@@ -55,11 +55,12 @@
 
 + XMP
 + VT-x
-+ Above 4G decoding
++ Above 4G Decoding
++ Above 4G MMIO BIOS assignment
 + Intel（VMX）Virtualization Technology
 + Hyper-Threading
 + EHCI/XHCI
-+ DVMT：32MB 或更高
++ DVMT：256MB
 
 ***
 
