@@ -54,10 +54,9 @@
 ### 开启：
 
 + XMP
-+ VT-x
++ VT-x（Intel（VMX）Virtualization Technology）
 + Above 4G Decoding
 + Above 4G MMIO BIOS assignment
-+ Intel（VMX）Virtualization Technology
 + Hyper-Threading
 + EHCI/XHCI
 + DVMT：256MB
@@ -152,7 +151,6 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 全系列均能正常�
 + 感谢 [TerserTop](https://www.bilibili.com/video/BV1eP4y1s76d/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f) 提供的演示教程！
 + 感谢 [win10Q](https://www.bilibili.com/video/BV1ub421J7Lk/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f]) 提供的 `USB 定制` 教程！
 + 感谢 [图拉丁GJ](https://www.bilibili.com/video/BV16p4y1M7G3/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f) 提供的 `强刷 VBios` 教程！
-+ 感谢 [大头蔡Cass](https://www.bilibili.com/video/BV17e4y1A7os/?spm_id_from=333.999.0.0&vd_source=259f097c1a5b4870885bbded43057d6f) 提供的注意事项！
 + 感谢 [国光酱](https://apple.sqlsec.com/) 提供的 `国光的黑苹果安装教程：手把手教你配置 OpenCore` 的实战系列教程！
 ***
 
