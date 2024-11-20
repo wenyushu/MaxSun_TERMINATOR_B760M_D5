@@ -8,7 +8,7 @@
 |              | 硬件配置                        | 备注                                                         |
 | ------------ | ------------------------------- | ------------------------------------------------------------ |
 | **CPU**      | i5-12600KF                      | Intel 11代及以上 `CPU` 核显无法驱动，若读者使用 `12600K` 且在 Windows 下需要使用核显，则需要在 `启动参数` 中添加 `-wegnoigpu` 参数用于在 macOS 下屏蔽核显 |
-| **主板**     | MS-Terminator B760M D5          | `MS-Terminator B760M D5 WIFI` 版本仅自带一张 `AX101 无线网卡`，与 `MS-Terminator B760M D5` 无本质区别。<br>理论上为 `D5` 是 `MS-Terminator B760M D4` 与 `MS-Terminator B760M D4 WIFI` 的换皮版本，应当可以使用此配置。<br>由于铭瑄祖传供电与设计方案（一套方案传三代），若有采用与 `D5` 类似的设计方案（如 `板载网卡8125`、`板载声卡 ALC897`）的主板，例如 `MS-iCraft B760M CROSS(未测试)` 应当也可以使用此配置。<br>**注意：此主板自带网卡接口协议为 `CNVi`，此协议在 macOS 中无法驱动！** |
+| **主板**     | MS-Terminator B760M D5          | `MS-Terminator B760M D5 WIFI` 版本仅自带一张 `AX101 无线网卡`，与 `MS-Terminator B760M D5` 无本质区别。<br>理论上 `D5` 是 `MS-Terminator B760M D4` 与 `MS-Terminator B760M D4 WIFI` 的换皮版本，应当可以使用此配置。<br>由于铭瑄祖传供电与设计方案（一套方案传三代），若有采用与 `D5` 类似的设计方案（如 `板载网卡8125`、`板载声卡 ALC897`）的主板，例如 `MS-iCraft B760M CROSS(未测试)` 应当也可以使用此配置。<br>**注意：此主板(D5)自带网卡接口协议为 `CNVi`，此协议在 macOS 中无法驱动！** |
 | **SSD**      | SN570 512G                      | 西部数据： `SN550/570/750/770/850/850X` 对于 `TRIM` 有着完美支持，因此均能正常安装和运行 macOS，建议购买。 |
 | **Memory**   | JUHOR 星域 DDR5 6000 16G  * 2    | 颗粒要求：避免矿卡颗粒即可；<br>频率要求：均可；<br>D4 or D5 要求：均可；<br>容量要求：至少 `单根 4G`，否则无法开机。<br>没什么特殊要求，除了远古时期的 `AMD 专用内存条` 可能存在问题之外，目前大部分品牌均可。 |
 | **显卡**     | 蓝宝石 RX570 8G（免驱卡）       | 或者使用其它免驱卡均可                                       |
@@ -27,10 +27,10 @@
   + 读者请使用 [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) 或者 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools) 生成并修改 `SMBIOS` 中的序列号，以及注入三码
   + **注意：请务必注入三码后再登录 `Apple ID`，否则会被苹果立即拉黑！**
   + **注意：在黑果上登录 `Apple ID` 有拉黑风险，本文档不为此负责！**
-  
-+ 由于 `Sonoma 14.0` 已正式移除了 `IO80211LegacyFamily 驱动`，而为了追求完美体验，本文档仅用于 `macOS 13`，即 `Ventura` 版本。
+## 测试版本
++ 由于 `Sonoma 14.0` 已正式移除了 `IO80211LegacyFamily 驱动`，而为了追求完美体验，本文档仅用于 `macOS 13`，即 `Ventura`。
 + OpenCore 版本：截至本文档编辑时间为 `1.0.1`，读者自己手动同步最新版本即可。
-+ macOS 版本：测试版本号为 `13.6.9`。
++ macOS 版本：测试版本号为 `13.6.9` （由于 Ventura 已进入维护阶段，因此读者可以自行下载 `13.6.9` 及之后版本）。
 ## 线材：
   + 在安装 macOS 时，为了不必要的 bug，请使用 DP 线！
 ## 硬盘：
@@ -44,6 +44,7 @@
   + 目前来说，如果想相对完整的体验 `隔空投送`，`接力`，`随航` 等功能，那可能停留在 `Ventura` 是最好的选择了。
   + 由于 `Sonoma 14.0` 及以上的 `macOS 正式版` 已正式移除了 `IO80211LegacyFamily 驱动`，至此所有市面上零售可买到的 `博通拆机网卡` 全部都不再免驱！
   + 虽然可以通过 [OpenCore Legacy Patcher](https://heipg.cn/tag/opencore-legacy-patcher) 找回驱动，那么少年，代价是什么呢？
+#### 代价
   + 代价：由于目前打补丁方案要求禁用 `AMFI`，因此 `百度网盘`、`天翼云盘` 等基于 `Electron` 的 `APP` 可能无法启动，这类情况虽然可以通过添加启动参 `ipc_control_port_options=0` 解决，but...禁用 `AMFI` 会导致 `Parallels` 免激活版和 `VMware Fusion` 无法正常启动，并且这之后也会有一系列问题在等着你。
   + 以目前的资料来看，如果选择 `Sonoma` 或 `Sequoia`，建议使用 `Intel 网卡（例如 AX210）`，但可能只能使用 `Wi-Fi` 和 `Bluetooth` 功能...
 
@@ -152,6 +153,8 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 全系列均能正常�
 
 ***
 # 鸣谢名单（以下排名不分先后）：
+
+黑果之路已经接近尾声，预计 Sequoia 将会是最后一代支持 `X86 架构` 的系统了，但...是段愉快的旅程 (´。＿。｀)
 
 + 感谢带佬 [JeoJay127](https://github.com/JeoJay127) 无偿分享的工具，本教程的 EFI 基于 [RapidEFI](https://github.com/JeoJay127/RapidEFI-Tool) 工具制作！
 + 感谢 [OpenCore 团队](https://github.com/acidanthera/OpenCorePkg) 制作的内核工具！
