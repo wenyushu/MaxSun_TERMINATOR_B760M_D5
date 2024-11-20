@@ -154,7 +154,7 @@ SN570 512G  西部数据： `SN550/570/750/770/850/850X` 全系列均能正常�
 ***
 # 鸣谢名单（以下排名不分先后）：
 
-黑果之路已经接近尾声，预计 Sequoia 将会是最后一代支持 `X86 架构` 的系统了，但...是段愉快的旅程 (´。＿。｀)
+苹果公司目前正全力转向 `ARM 架构`，而黑果之路已经接近尾声，预计 `Sequoia` 将会是最后一代支持 `X86 架构` 的系统了，但...是段愉快的旅程 (´。＿。｀)
 
 + 感谢带佬 [JeoJay127](https://github.com/JeoJay127) 无偿分享的工具，本教程的 EFI 基于 [RapidEFI](https://github.com/JeoJay127/RapidEFI-Tool) 工具制作！
 + 感谢 [OpenCore 团队](https://github.com/acidanthera/OpenCorePkg) 制作的内核工具！
