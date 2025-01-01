@@ -105,10 +105,11 @@
 注意：
 + 这是 macOS 系统本身的问题！
 解决方案：
-+ 据说在 （14 后期 / 15）以上给当 bug 修复了？
 + 理论上在关闭后 DSC 功能后，可以正常使用 4K/120Hz/10Bit 输出（无法 HDR），或者使用 4K/95Hz/10Bit（可以使用 HDR），HDMI 接口同样最高支持到 120Hz
+题外话：
++ 据说在 （14 后期 / 15）给当 bug 修复了？
 + M1 之后的机型能正常使用 DSC 功能
-  + but...都买 M1 了...还黑个锤子...
++ but...都买 M1 了...还黑个锤子...
 
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/图形卡.png)
 
