@@ -101,11 +101,10 @@
 ![](https://github.com/wenyushu/Maxsun_TERMINATOR_B760M_D5/blob/main/image/显示器.png)
 
 ###  `4K 高刷显示器`
-使用 DP 接口时，需要关闭显示器的 DSC 功能，否则 DP 口可能会不正常（黑屏、刷新率最高 100Hz 等问题）
+使用 DP 接口时，需要关闭显示器的 DSC 功能，否则 DP 口可能会不正常（黑屏、刷新率最高 100Hz 等问题）<br>
+解决方案：理论上在关闭后 DSC 功能后，可以正常使用 4K/120Hz/10Bit 输出（无法 HDR），或者使用 4K/95Hz/10Bit（可以使用 HDR），HDMI 接口同样最高支持到 120Hz<br>
 注意：
 + 这是 macOS 系统本身的问题！
-解决方案：
-+ 理论上在关闭后 DSC 功能后，可以正常使用 4K/120Hz/10Bit 输出（无法 HDR），或者使用 4K/95Hz/10Bit（可以使用 HDR），HDMI 接口同样最高支持到 120Hz
 题外话：
 + 据说在 （14 后期 / 15）给当 bug 修复了？
 + M1 之后的机型能正常使用 DSC 功能
